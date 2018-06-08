@@ -1,9 +1,17 @@
+-- This file was automatically generated for the LuaDist project.
+
 package = "many2one"
-version = "1.14.11.12-1"
+version = "1.14.11.12-2"
+-- LuaDist source
 source = {
-	url = "git://github.com/aryajur/many2one",
-	tag = "1.14.11"
+  tag = "1.14.11.12-2",
+  url = "git://github.com/LuaDist-testing/many2one.git"
 }
+-- Original source
+-- source = {
+-- 	url = "git://github.com/aryajur/many2one",
+-- 	tag = "1.14.11"
+-- }
 description = {
 	summary = "Convert application spanning multiple Lua files to 1",
 	detailed = [[
@@ -19,5 +27,10 @@ build = {
 	type = "builtin",
 	modules = {
 		many2one = "src/many2one.lua"
-	}
+	},
+    install = {
+        bin = {
+            "many2one.lua",
+        },
+    },
 }
