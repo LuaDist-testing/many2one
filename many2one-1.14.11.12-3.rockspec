@@ -1,10 +1,10 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "many2one"
-version = "1.14.11.12-2"
+version = "1.14.11.12-3"
 -- LuaDist source
 source = {
-  tag = "1.14.11.12-2",
+  tag = "1.14.11.12-3",
   url = "git://github.com/LuaDist-testing/many2one.git"
 }
 -- Original source
@@ -25,12 +25,9 @@ dependencies = {
 }
 build = {
 	type = "builtin",
-	modules = {
-		many2one = "src/many2one.lua"
-	},
     install = {
         bin = {
-            "many2one.lua",
+            "src/many2one.lua",
         },
     },
 }
